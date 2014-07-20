@@ -1,0 +1,111 @@
+\documentclass[11pt]{article}
+
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\lstset{ %
+language=C++,                % choose the language of the code
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+backgroundcolor=\color{white!3!white},  % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,           % adds a frame around the code
+tabsize=2,          % sets default tabsize to 2 spaces
+captionpos=b,           % sets the caption-position to bottom
+breaklines=true,        % sets automatic line breaking
+breakatwhitespace=false,    % sets if automatic breaks should only happen at whitespace
+escapeinside={\%*}{*)},          % if you want to add a comment within your code
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{gray!80!black},
+  identifierstyle=\color{black},
+}
+
+
+\title{\textbf{Computer Graphics : Assignment 6}}
+
+\author{
+		\vspace{ 2 mm}\\
+		Supervised By : \textbf{Prof. Srikanth TK}\\
+		\vspace {2mm}\\
+		amit.tomar@iiitb.org \\
+		(MT2013008) \\
+		}
+		
+\date{2 - May - 2014}
+
+\begin{document}
+\lstset{language=C} 
+\maketitle
+
+\vspace{ 100 mm}
+
+\section{Prerequisite Libraries}
+
+\begin {enumerate}
+\item OpenGl (Mesa libraries)
+\item Qt5 libraries
+\end {enumerate}
+
+\section{Build Steps}
+
+\begin {enumerate}
+\item Change directory to folder MT2013008\_Assignment6/Src
+\item Run the following command\\
+
+\textbf{qmake MT2013008\_Assignment6.pro -o ../Build/Makefile} \\
+
+This will generate the Makefile in the Build folder.
+
+\item Change directory to folder MT2013008\_Assignment6/Build
+
+\item Run the following command \\
+
+\textbf{make} \\
+
+This will build the complete project and generate and executable in the Build directory.
+
+\item To start the application, go to build directory, execute following command 
+
+\textbf{./MT2013008\_assignment6}
+
+
+
+\end {enumerate}
+
+\section{Usage}
+
+\textbf{Note}: To enable keyboard controls, left-click on the left side of the screen.
+
+\begin {enumerate}
+
+\item Use 'q','e','w' keys to move arm 1.
+\item Use 'a','s','d' keys to move arm 2.
+\item Use 'z','x','c' keys to move arm 3.
+\item Use 'i' key to make box move.
+\item use 'p' key to move robot arm to belt 1.
+\item use 'o' key to move robot arm to belt 2.
+\item use 'k' key to pick box.
+\item use 'l' key to drop box.
+
+\end {enumerate}
+
+\section{ Issues with implementation}
+
+\begin {enumerate}
+\item Implementing the program logic by adding more than one child to a node is giving some errors. More time to be spend on push-pop matrix concept.
+
+\end {enumerate}             
+
+\section{ Pending}
+
+\begin {enumerate}
+\item Multiple light sources.
+\item Multiple view points.
+\item Collision detection.
+\end {enumerate}   
+
+\end{document}
+
